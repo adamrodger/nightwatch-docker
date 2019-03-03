@@ -1,5 +1,10 @@
 {
   "description": "Example repo for using Nightwatch.js with Chrome in Docker",
+
+  "scripts": {
+    "test": "nightwatch"
+  },
+
   "devDependencies": {
     "nightwatch": "^1.0.19"
   }
