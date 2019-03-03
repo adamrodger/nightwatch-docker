@@ -1,0 +1,14 @@
+{
+    "src_folders": ["./tests"],
+    "output_folder": "./out/nightwatch",
+
+    "test_settings": {
+        "default": {
+            "selenium_host": "selenium",
+            "selenium_port": 4444,
+            "desiredCapabilities": {
+              "browserName": "chrome"
+            }
+        }
+    }
+}

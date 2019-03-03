@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+  nightwatch:
+    build: .
+    image: adamrodger/nightwatch-docker:latest
+    depends_on:
+      - selenium
+    volumes:
+      - "./out/:/src/out/"
+
+  selenium:
+    image: selenium/standalone-chrome
+    ports:
+      - 4444
