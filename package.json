@@ -1,11 +1,24 @@
 {
-  "description": "Example repo for using Nightwatch.js with Chrome in Docker",
-
-  "scripts": {
-    "test": "nightwatch"
-  },
-
-  "devDependencies": {
-    "nightwatch": "^1.0.19"
-  }
+    "name": "nightwatch-docker",
+    "version": "1.0.0",
+    "directories": {
+        "test": "tests"
+    },
+    "description": "Example repo for using Nightwatch.js with Chrome in Docker",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/adamrodger/nightwatch-docker.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/adamrodger/nightwatch-docker/issues"
+    },
+    "homepage": "https://github.com/adamrodger/nightwatch-docker#readme",
+    "scripts": {
+        "test": "nightwatch"
+    },
+    "devDependencies": {
+        "nightwatch": "^1.0.19"
+    }
 }
