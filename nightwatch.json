@@ -1,19 +1,26 @@
 {
     "src_folders": ["./tests"],
     "output_folder": "./out/nightwatch",
+    "test_workers": true,
 
     "test_settings": {
         "default": {
             "selenium_host": "selenium",
             "selenium_port": 4444,
             "desiredCapabilities": {
-              "browserName": "chrome"
+                "browserName": "chrome",
+                "args": [
+                    "headless",
+                    "disable-gpu",
+                    "v=-1",
+                    "window-size=1280,800"
+                ]
             },
             "screenshots" : {
-              "enabled" : true,
-              "on_failure" : true,
-              "on_error" : false,
-              "path" : "./out/screenshots"
+                "enabled" : true,
+                "on_failure" : true,
+                "on_error" : false,
+                "path" : "./out/screenshots"
             }
         }
     }

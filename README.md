@@ -5,4 +5,7 @@ Run with:
 
 ```bash
 docker-compose up --build --exit-code-from nightwatch
-``
+```
+
+The Google-based test should pass but the Bing-based test will fail on purpose
+in order to demonstrate the screenshots functionality.
